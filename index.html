@@ -1,0 +1,163 @@
+---
+layout: landing
+permalink: /it/
+---
+<!-- Banner -->
+<section id="banner" role="banner">
+	<div class="inner">
+		<h2>{{ site.title }}</h2>
+		<p>{{ site.description | markdownify }}</p>
+		<ul class="actions">
+			<li><a href="#cta" class="button special">Attiva</a></li>
+		</ul>
+	</div>
+	<a href="#one" class="more scrolly">Scopri di più</a>
+</section>
+<div role="main">
+	<!-- One -->
+	<section id="one" class="wrapper style1 special">
+		<div class="inner">
+			<header class="major">
+				<h2>Come ha detto giustamente il CEO di Microsoft, <i>"Ogni azienda è ora un'azienda software."</i></h2>
+				<p>Questo mondo guidato dal software espone le organizzazioni a rischi digitali senza precedenti. Comprendere e
+					rafforzare la tua <span class="dp-label">digital posture</span> non è più opzionale —
+					è essenziale per resilienza, fiducia e successo a lungo termine.</p>
+			</header>
+			<ul class="icons major">
+				<li><span class="icon fa-reorder major style1"><span class="label">Valuta</span></span></li>
+				<li><span class="icon fa-shield major style2"><span class="label">Migliora</span></span></li>
+				<li><span class="icon fa-lightbulb-o major style3"><span class="label">Ispira</span></span></li>
+			</ul>
+			<p>Costruire una digital posture sicura e fidata in modo che ogni interazione ispiri fiducia.</p>
+		</div>
+	</section>
+
+	<!-- Two -->
+	<section id="two" class="wrapper alt style2">
+		<section class="spotlight">
+			<div class="image"
+				style="background-image: url(/images/pic01.jpg); background-size: cover; background-position: center; min-height: 40vh; display:flex; align-items:center; justify-content:center;">
+				<h2>Digital Posture</h2>
+			</div>
+			<div class="content">
+				<p>La digital posture si riferisce alla prontezza complessiva, alla maturità e alla resilienza delle capacità digitali di un'organizzazione. Pensala come la "posizione" dell'organizzazione nell'economia digitale — quanto è capace di sfruttare la tecnologia per raggiungere obiettivi strategici, adattarsi alle interruzioni e rimanere competitiva.</p>
+			</div>
+		</section>
+		<section class="spotlight">
+			<div class="image"
+				style="background-image: url(/images/pic02.jpg); background-size: cover; background-position: center; min-height: 40vh; display:flex; align-items:center; justify-content:center;">
+				<h2>Le 3 Dimensioni</h2>
+			</div>
+			<div class="content">
+				<p>La Digital Posture può essere analizzata sotto 3 Dimensioni chiave:</p>
+				{% for file in site.digital_posture %}
+				<p><a href="{{ file.url }}">{{ file.title }}</a></p>
+				{% endfor %}
+			</div>
+		</section>
+		<section class="spotlight">
+			<div class="image"
+				style="background-image: url(/images/pic03.jpg); background-size: cover; background-position: center; min-height: 40vh; display:flex; align-items:center; justify-content:center;">
+				<h2>Perché dovrei preoccuparmi?</h2>
+			</div>
+			<div class="content">
+				<p>Proprio come la postura fisica, allenarsi è inutile se fatto in modo scorretto. Richiede movimenti appropriati
+					supportati dall'attrezzatura giusta, un programma personalizzato con nutrizione bilanciata e una posizione corretta. Queste sono le stesse tre dimensioni essenziali per avvicinarsi alla digital posture.</p>
+			</div>
+		</section>
+		<section class="spotlight">
+			<div class="image"
+				style="background-image: url(/images/pic04.jpg); background-size: cover; background-position: center; min-height: 40vh; display:flex; align-items:center; justify-content:center;">
+				<h2>Come valutare</h2>
+			</div>
+			<div class="content">
+				<p>Il modo migliore per valutare la tua Digital Posture è attraverso una valutazione strutturata del modello di maturità che offre una visione olistica della posizione della tua organizzazione. Un modello di maturità fornisce un framework per valutare quanto è avanzata l'organizzazione across dimensioni critiche — strategia, processi, tecnologie, governance e cultura.</p>
+			</div>
+		</section>
+	</section>
+
+	<!-- Three -->
+	<section id="three" class="wrapper style3 special">
+		<div class="inner">
+			<header class="major">
+				<h2>Le 3 Dimensioni</h2>
+				<p>Strutturando le valutazioni in queste tre dimensioni, le organizzazioni possono bilanciare la prontezza delle persone,
+					la resilienza tecnica e la reputazione digitale esterna — una visione olistica della loro digital posture.</p>
+			</header>
+			<ul class="features">
+				{% for file in site.digital_posture %}
+				<li class="icon {{ file.icon }} onerow">
+					<h3><a href="{{ file.url }}">{{ file.title }}</a></h3>
+					<p>{{ file.focus | strip_html | truncate: 150 }}</p>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</section>
+	<!-- CTA -->
+	<section id="cta" class="wrapper style4 special">
+		<div class="inner" style="display:flex; flex-direction:column; gap:1rem; align-items:stretch;">
+			<header class="major" style="width:100%; order:0;">
+				<h2>Contattaci</h2>
+				<p>Valuta la tua postura, migliora, ispira fiducia.</p>
+			</header>
+			<section style="width:100%; order:1;">
+				<form id="contactForm" method="post" action="https://eo3xqozda3ra2kr.m.pipedream.net/contactform"
+					style="width:100%;">
+					<div class="row uniform">
+						<div class="6u 12u$(xsmall)">
+							<input type="text" name="demo-name" id="demo-name" value="" placeholder="Nome*" required
+								aria-label="Name" autocomplete="given-name"/>
+						</div>
+						<div class="6u$ 12u$(xsmall)">
+							<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email*" required
+								aria-label="Email" autocomplete="email" />
+						</div>
+						<div class="12u$">
+							<div class="select-wrapper">
+								<select name="demo-category" id="demo-category" aria-label="Sector">
+									<option value="">- Sector -</option>
+									<option value="MAN">Manufacturing</option>
+									<option value="LOG">Logistics</option>
+									<option value="SVC">Services</option>
+									<option value="BAN">Bank/Financial</option>
+									<option value="OTH">Other</option>
+								</select>
+							</div>
+						</div>
+						<div class="12u$">
+							<div class="select-wrapper">
+								<select name="demo-function" id="demo-function" aria-label="Function">
+									<option value="">- Sector -</option>
+									<option value="CXO">C-Level</option>
+									<option value="DIR">Director</option>
+									<option value="MAN">Manager</option>
+									<option value="CON">Consultant</option>
+									<option value="STU">Student</option>
+									<option value="OTH">Other</option>
+								</select>
+							</div>
+						</div>
+						<div class="6u 12u$(small)">
+							<input type="checkbox" id="demo-copy" name="demo-copy" checked aria-label="Email me a copy">
+							<label for="demo-copy">Email me a copy</label>
+						</div>
+						<div class="6u$ 12u$(small)">
+							<input type="checkbox" id="demo-human" name="demo-human" aria-label="Not a robot">
+							<label for="demo-human">Not a robot</label>
+						</div>
+						<div class="12u$">
+							<textarea name="demo-message" id="demo-message" placeholder="Enter your request*" rows="6" required aria-label="Message"></textarea>
+						</div>
+						<div class="12u$">
+							<ul class="actions vertical">
+								<li><input id="submitButton" type="submit" value="Invia messaggio" class="fit special" formnovalidate aria-label="Send Message" /></li>
+								<li><input type="reset" value="Reset" class="fit" aria-label="Reset form" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</section>
+		</div>
+	</section>
+</div> <!-- end main -->

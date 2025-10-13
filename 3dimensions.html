@@ -1,0 +1,58 @@
+---
+layout: page
+title: Tre Dimensioni
+subtitle: Panoramica delle 3 Dimensioni della Digital Posture
+permalink: /it/3dimensions
+---
+			<section>
+				<p>La Digital Posture si riferisce alla prontezza complessiva, alla maturità e alla resilienza delle capacità digitali di un'organizzazione. Pensala come la "posizione" dell'organizzazione nell'economia digitale — quanto è capace di sfruttare la tecnologia per raggiungere obiettivi strategici, adattarsi alle interruzioni e restare competitiva.</p>
+				<p>La Digital Posture può essere analizzata in 3 Dimensioni chiave:</p>
+				<ol>
+					{% for file in site.digital_posture %}
+						<li><b>{{ file.title }}</b>: {{ file.focus }} <a href="{{ file.url }}" aria-label="{{file.title}}">LEGGI DI PIÙ</a></li><br/><!-- TO-DO: remove br-->
+					{% endfor %}
+				</ol>
+				<p>Strutturando le valutazioni in queste tre dimensioni, le organizzazioni possono bilanciare la prontezza delle persone, la resilienza tecnica e la reputazione digitale esterna — una visione olistica della loro digital posture.</p>
+				<hr />
+			</section>
+			<section>
+				<h3>Valutare la Digital Posture</h3>
+				<h4>Una lente strategica sulla prontezza organizzativa</h4>
+				<p>In un'era in cui la trasformazione digitale definisce il vantaggio competitivo, valutare la digital posture di un'organizzazione non è più opzionale — è essenziale. Questo framework di valutazione multidimensionale offre un approccio strutturato per capire quanto un'organizzazione sia attrezzata per prosperare in un mondo digitale-first. Esaminando tre dimensioni fondamentali — Cultura digitale & Competenze, Infrastruttura digitale & Processi, e Presenza digitale & Supporto — i leader possono identificare punti di forza, scoprire lacune e dare priorità agli investimenti.</p>
+				<div class="table-wrapper">
+				<table>
+  <thead>
+    <tr>
+      <th>Dimensione</th>
+      <th>Strumenti di valutazione di esempio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cultura digitale &amp; Competenze</td>
+      <td>Sondaggi, analisi del divario di competenze, metriche di adozione della formazione</td>
+    </tr>
+    <tr>
+      <td>Infrastruttura digitale &amp; Processi</td>
+      <td>Audit IT, esercitazioni DR, framework di cybersecurity</td>
+    </tr>
+    <tr>
+      <td>Presenza digitale &amp; Supporto</td>
+      <td>Test UX, strumenti di social listening, sondaggi di soddisfazione cliente</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>Ogni dimensione riflette un pilastro critico della maturità digitale. Dal valutare la prontezza della forza lavoro e la resilienza tecnologica al valutare le esperienze digitali rivolte ai clienti, questo framework consente alle organizzazioni di costruire una digital posture solida, adattiva e pronta per il futuro.</p>
+			<hr />
+			</section>
+
+			<section>
+				<h4>Dettagli sulla postura di cybersecurity e le 3 dimensioni</h4>
+				<p>La cybersecurity è senza dubbio uno dei componenti più critici della digital posture. Protegge sistemi, dati e operazioni dalle minacce che potrebbero paralizzare un'organizzazione. Strumenti come framework di cybersecurity, penetration test ed esercitazioni di disaster recovery aiutano a valutare quanto un'organizzazione sia resiliente e sicura.</p>
+				<ul>
+					{% for file in site.cybersecurity %}
+					<li><b>{{ file.title }}</b>: {{ file.extract }} <a href="{{ file.url }}" aria-label="{{file.title}}">LEGGI DI PIÙ</a></li><br/><!-- TO-DO: remove br-->
+					{% endfor %}
+				</ul>
+			</section>
