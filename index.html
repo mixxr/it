@@ -52,7 +52,7 @@ permalink: /
 				<p>La Digital Posture può essere analizzata sotto 3 <a href="/it/3dimensions"><span
 							class="dp-dimensions-label">Dimensioni</span></a> chiave:</p>
 				{% for file in site.digital_posture %}
-				<p><a href="{{ file.url }}">{{ file.title }}</a></p>
+				<p><a href="{{site.lang}}{{ file.url }}">{{ file.title }}</a></p>
 				{% endfor %}
 			</div>
 		</section>
@@ -88,7 +88,7 @@ permalink: /
 			<ul class="features">
 				{% for file in site.digital_posture %}
 				<li class="icon {{ file.icon }} onerow">
-					<h3><a href="{{ file.url }}">{{ file.title }}</a></h3>
+					<h3><a href="{{site.lang}}{{ file.url }}">{{ file.title }}</a></h3>
 					<p>{{ file.focus | strip_html | truncate: 150 }}</p>
 				</li>
 				{% endfor %}

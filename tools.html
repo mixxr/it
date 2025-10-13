@@ -2,14 +2,14 @@
 layout: page
 title: Strumenti
 subtitle: Strumenti per valutare la Digital Posture e le sue 3 Dimensioni
-permalink: tools
+permalink: /tools
 ---
 	<h3>{{ page.title }}</h3>
 	<hr />
 	<h4>Cybersecurity</h4>
 				<ul>
 					{% for file in site.cybersecurity %}
-					<li><b>{{ file.title }}</b>: {{ file.extract }} <a href="{{ file.url }}" aria-label="{{file.title}}">LEGGI DI PIÙ</a></li><br/><!-- TO-DO: remove br-->
+					<li><b>{{ file.title }}</b>: {{ file.extract }} <a href="{{site.lang}}{{ file.url }}" aria-label="{{file.title}}">LEGGI DI PIÙ</a></li><br/><!-- TO-DO: remove br-->
 					{% endfor %}
 				</ul>
 		<hr />
