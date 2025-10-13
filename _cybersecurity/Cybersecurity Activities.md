@@ -2,7 +2,7 @@
 layout: page
 title: Attività di Cybersecurity attraverso le Dimensioni
 focus: Cybersecurity
-extract: La tabella "Attività di Cybersecurity attraverso le Dimensioni" mappa le pratiche di sicurezza comuni su tre dimensioni organizzative: Cultura digitale & Competenze, Infrastruttura digitale & Processi, e Presenza digitale & Supporto.
+extract: La tabella Attività di Cybersecurity attraverso le Dimensioni mappa le pratiche di sicurezza comuni su tre dimensioni organizzative, Cultura digitale & Competenze, Infrastruttura digitale & Processi e Presenza digitale & Supporto.
 permalink: /cybersecurity/cybersecurity-activities-across-dimensions
 ---
 
