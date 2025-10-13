@@ -3,7 +3,7 @@ layout: page
 title: Modello di Valutazione della Maturità della Cybersecurity
 focus: Cybersecurity
 extract: Questo modello fornisce una visione olistica della postura di cybersecurity attraverso persone, sistemi e la fiducia rivolta al cliente.
-permalink: /it/cybersecurity/cybersecurity-maturity-model
+permalink: /cybersecurity/cybersecurity-maturity-model
 ---
 
 ### {{ page. title }}
