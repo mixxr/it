@@ -65,7 +65,7 @@
 
 		// Menu.
 			$('#menu')
-				.append('<a href="#menu" class="close" alt="close">Close</a>')
+				.append('<a href="#menu" class="close" alt="close"></a>')
 				.appendTo($body)
 				.panel({
 					delay: 500,
